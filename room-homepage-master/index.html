@@ -21,14 +21,15 @@
         color: hsl(228, 45%, 44%);
       }
     </style>
+    <script src="./index.js" defer></script>
   </head>
 
   <body>
     <header class="header">
       <nav class="nav">
-        <img src="./images/icon-hamburger.svg" alt="">
-        <section class="nav__panel">
-          <img src="./images/icon-close.svg" alt="">
+        <img src="./images/icon-hamburger.svg" alt="" class="icon-hamburger" data-hamburger>
+        <section class="nav__panel" data-nav-panel>
+          <img src="./images/icon-close.svg" alt="" class="icon-close" data-close-nav>
           <ul class="nav__item-list">
             <li class="nav__item">Home</li>
             <li class="nav__item">Shop</li>
@@ -37,7 +38,7 @@
           </ul>
         </section>
       </nav>
-      <img src="./images/logo.svg" alt="">
+      <img src="./images/logo.svg" alt="" class="icon-logo">
     </header>
 
     <main class="main">
