@@ -43,59 +43,93 @@
 
     <main class="main">
       <div class="slider">
-        <article class="slider__page">
-          <img src="./images/mobile-image-hero-1.jpg"
-            alt="Two futuristic white chairs next to small table with small tree in pot on it.">
+        <article class="slider__page" data-slider-page data-id='1'>
+          <div class="slider__head">
+            <img srcset="./images/mobile-image-hero-1.jpg 375w, ./images/desktop-image-hero-1.jpg 840w"
+              sizes="(max-width:840px) 375px, 840px" src="./images/mobile-image-hero-1.jpg"
+              alt="Two futuristic white chairs next to small table with small tree in pot on it." class="slider__img">
+            <div class="slider__controls">
+              <img src="./images/icon-angle-left.svg" alt="" class="icon-arr" data-slider-arrow='left' data-id='1'>
+              <img src="./images/icon-angle-right.svg" alt="" class="icon-arr" data-slider-arrow='right' data-id='1'>
+            </div>
+          </div>
           <section class="slider__content">
             <h2 class="slider__title">Discover innovative ways to decorate</h2>
             <p class="slider__text">We provide unmatched quality, comfort, and style for property owners across the
               country.
               Our experts combine form and function in bringing your vision to life. Create a room in your
               own style with our collection and make your property a reflection of you and what you love.</p>
-            <button class="slider__btn">Shop now</button>
+            <div class="slider__shop-container" data-shop-btn>
+              <button class="slider__shop-btn">Shop now</button>
+              <img src="./images/icon-arrow.svg" alt="" class="icon-arrow">
+            </div>
           </section>
         </article>
 
-        <article class="slider__page">
-          <img src="./images/mobile-image-hero-2.jpg" alt="Three simple modern chairs in two rows">
+        <article class="slider__page" data-slider-page data-id='2'>
+          <div class="slider__head">
+            <img srcset="./images/mobile-image-hero-2.jpg 375w, ./images/desktop-image-hero-2.jpg 840w"
+              sizes="(max-width:840px) 375px, 840px" src="./images/mobile-image-hero-2.jpg"
+              alt="Three simple modern chairs in two rows" class="slider__img">
+            <div class="slider__controls">
+              <img src="./images/icon-angle-left.svg" alt="" class="icon-arr" data-slider-arrow='left' data-id='2'>
+              <img src="./images/icon-angle-right.svg" alt="" class="icon-arr" data-slider-arrow='right' data-id='2'>
+            </div>
+          </div>
           <section class="slider__content">
             <h2 class="slider__title">We are available all across the globe</h2>
             <p class="slider__text">With stores all over the world, it's easy for you to find furniture for your home or
-              place of
-              business.
+              place of business.
               Locally, we’re in most major cities throughout the country. Find the branch nearest you using our
               store locator. Any questions? Don't hesitate to contact us today.</p>
-            <button class="slider__btn"> Shop now</button>
+            <div class="slider__shop-container" data-shop-btn>
+              <button class="slider__shop-btn">Shop now</button>
+              <img src="./images/icon-arrow.svg" alt="" class="icon-arrow">
+            </div>
           </section>
         </article>
 
-        <article class="slider__page">
-          <img src="./images/mobile-image-hero-3.jpg" alt="Black studio chair">
+        <article class="slider__page" data-slider-page data-id='3'>
+          <div class="slider__head">
+            <img srcset="./images/mobile-image-hero-3.jpg 375w, ./images/desktop-image-hero-3.jpg 840w"
+              sizes="(max-width:840px) 375px, 840px" src="./images/mobile-image-hero-3.jpg" alt="Black studio chair"
+              class="slider__img">
+            <div class="slider__controls">
+              <img src="./images/icon-angle-left.svg" alt="" class="icon-arr" data-slider-arrow='left' data-id='3'>
+              <img src="./images/icon-angle-right.svg" alt="" class="icon-arr" data-slider-arrow='right' data-id='3'>
+            </div>
+          </div>
           <section class="slider__content">
             <h2 class="slider__title">Manufactured with the best materials</h2>
             <p class="slider__text">Our modern furniture store provide a high level of quality. Our company has invested
-              in advanced
-              technology
-              to ensure that every product is made as perfect and as consistent as possible. With three decades of
-              experience in this industry, we understand what customers want for their home and office.</p>
-            <button class="slider__btn">Shop now</button>
+              in advanced technology to ensure that every product is made as perfect and as consistent as possible. With
+              three decades of experience in this industry, we understand what customers want for their home and office.
+            </p>
+            <div class="slider__shop-container" data-shop-btn>
+              <button class="slider__shop-btn">Shop now</button>
+              <img src="./images/icon-arrow.svg" alt="" class="icon-arrow">
+            </div>
           </section>
         </article>
       </div>
-
-      <article>
-        <h3>About our furniture</h3>
-        <p>Our multifunctional collection blends design and function to suit your individual taste.
-          Make each room unique, or pick a cohesive theme that best express your interests and what
-          inspires you. Find the furniture pieces you need, from traditional to contemporary styles
-          or anything in between. Product specialists are available to help you create your dream space.</p>
+      <article class="about">
+        <img src="./images/image-about-dark.jpg" alt="Small rounded table with two black chairs in bedroom">
+        <section class="about__content">
+          <h3 class="about__title">About our furniture</h3>
+          <p class="about__text">Our multifunctional collection blends design and function to suit your individual
+            taste.
+            Make each room unique, or pick a cohesive theme that best express your interests and what
+            inspires you. Find the furniture pieces you need, from traditional to contemporary styles
+            or anything in between. Product specialists are available to help you create your dream space.</p>
+        </section>
+        <img src="./images/image-about-light.jpg" alt="Simple white chair">
       </article>
     </main>
 
     <footer>
       <div class="attribution">
         Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-        Coded by <a href="#">Your Name Here</a>.
+        Coded by <a href="#">Pelczar Łukasz</a>.
       </div>
     </footer>
   </body>
