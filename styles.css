@@ -72,6 +72,7 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
+  overflow: hidden;
 }
 
 .slider__page{
@@ -112,6 +113,8 @@
 }
 .slider__img{
   max-width:100%;
+  height: auto;
+  max-height: 100%;
 }
 .slider__controls{
   position: absolute;
@@ -218,10 +221,10 @@
    }
 
   .slider__page{
-    height: 60vh;
+    /* height: 60vh; */
     max-height: 60vh;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
+    grid-template-rows: 60vh;
   }
 
   .slider__content{
